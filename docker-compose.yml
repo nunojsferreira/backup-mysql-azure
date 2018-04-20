@@ -1,0 +1,12 @@
+version: '2'
+services:
+    backup:
+      build: .
+      environment:
+        AZURE_STORAGE_ACCOUNT: capitalisedevbackups
+        AZURE_STORAGE_ACCESS_KEY: eC29YkLJITtbK/QNwWlTYTjRLU3e0YaQE7VF4RcM0fnkgFtiJLjd7jRtF7EWQ1HGzhQW4mO9WUuXxsrvlY5YoQ==
+        AZURE_STORAGE_CONTAINER: backup
+        MYSQL_HOST: devcapitalise.mysql.database.azure.com
+        MYSQL_PORT: 3306
+        MYSQL_USER: "capitalisedev@devcapitalise"
+        MYSQL_PASSWORD: M58dmlcyHhZQ9LlQldCn3Gx
